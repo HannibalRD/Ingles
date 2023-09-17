@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import {Button, ButtonGroup, ButtonToolbar} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
+function Example() {
+  const [open, setOpen] = useState(false);
 
+}
 function RandomWord() {
   const { t } = useTranslation();
   const [englishWord, setEnglishWord] = useState(''); 
@@ -26,12 +31,17 @@ function RandomWord() {
   };
 
   return (
-    <div>
-      <button onClick={getRandomEnglishWord}>Get Random Word</button>
-      <button onClick={translateToSpanish}>Translate to Spanish</button>
+    <>
+      {/* <ButtonToolbar aria-label="Toolbar with button groups">
+        <ButtonGroup className="me-2" aria-label="First group">  */}
+          <Button variant='outline-success' size="lg" onClick={getRandomEnglishWord}>Get Random Word</Button>
+          <Button variant='outline-success' size="lg" onClick={translateToSpanish}>Translate to Spanish</Button>
+        {/* </ButtonGroup>
+      </ButtonToolbar> */}
+    
       <p>English: {englishWord}</p>
       <p>Español: {spanishWord}</p>
-    </div>
+    </>
   );
 }
 

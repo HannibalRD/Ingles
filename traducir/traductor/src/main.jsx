@@ -5,6 +5,7 @@ import global_es from './translations/es/global_es.json';
 import global_en from './translations/en/global_en.json';
 import i18next from 'i18next';
 import { I18nextProvider } from 'react-i18next';
+import './styles.css'
 
 i18next.init({
   interpolation: { escapeValue: false },
