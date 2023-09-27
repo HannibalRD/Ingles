@@ -1,5 +1,5 @@
 {
-    "global": {
+    "global":{
         "Get on":"Get on",
         "Drive off":"Drive off",
         "Come back":"Come back",
@@ -9,10 +9,48 @@
         "Take off":"Take off",
         "Get by":"Get by",
         "Run away (from)":"Run away (from)",
+        "Keep up (with)":"Keep up (with)",
         "Look up (at)":"Look up (at)",
         "Look forward (to)":"Look forward (to)",
         "Get in":"Get in",
-        "Let yourself in":"Let yourself in"
-
+        "Let yourself in":"Let yourself in",
+        "Dive in":"Dive in",
+        "Move in":"Move in",
+        "Check in (hotel,airport)":"Check in (hotel,airport)",
+        "Walk out":"Walk out",
+        "Lock out":"Lock out",
+        "Climb out":"Climb out",
+        "Check out":"Check out",
+        "Drop/call in":"Drop/call in",
+        "Join in":"Join in",
+        "Plug in":"Plug in",
+        "Fill in (U.K)-Fill out (U.S.A)":"Fill in (U.K) - Fill out (U.S.A)",
+        "Take somebody in":"Take somebody in",
+        "Eat out":"Eat out",
+        "Drop out":"Drop out",
+        "Get out":"Get out",
+        "Cut something out":"Cut something out",
+        "Leave something out":"Leave something out",
+        "Cross/rub something +out":"Cross/rub something +out",
+        "Go out":"Go out",
+        "Put out(a fire,a cigarette,a light)":"Put out(a fire,a cigarette,a light)",
+        "Turn out (a light)":"Turn out (a light)",
+        "Blow out ":"Blow out ",
+        "Work out":"Work out",
+        "Work something out":"Work something out",
+        "Carry out (order, experiment, survey)":"Carry out (order, experiment, survey)",
+        "Fall out (with somebody)":"Fall out (with somebody)",
+        "Find out + THAT/WHAT/WHEN/WHO etc":"Find out + THAT/WHAT/WHEN/WHO etc",
+        "As well as":"As well as",
+        "And":"And",
+        "Second":"Second",
+        "Then / Next":"Then / Next",
+        "Moreover / Furthermore":"Moreover / Furthermore",
+        "In fact / As a matter of fact":"In fact / As a matter of fact",
+        "Actually":"Actually",
+        "Anyway":"Anyway",
+        "Besides":"Besides",
+        "By the way":"By the way"
+    
     }
 }

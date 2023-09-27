@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -11,7 +11,7 @@ function RandomWord() {
 
   const generateRandomWords = () => {
     const englishWordsList = [
-      'Get on', 'Drive off', 'Come back', 'Turn round', 'Break down','Look out','Take off','Get by','Run away (from)','Keep up (with)','Look up (at)','Look forward (to)','Get in','Let yourself in','Dive in','Move in','Check in (hotel,airport)','Walk out','Lock out','Climb out','Plug in','Fill in (U.K)-Fill out (U.S.A)','Take somebody in','Eat out','Drop out','Get out','Cut something out','Leave something out','Cross/rub something +out','Go out','Put out(a fire,a cigarette,a light)','Turn out (a light)','Blow out','Work out','Work something out','Carry out (order, experiment, survey)','Fall out (with somebody)','Find out + THAT/WHAT/WHEN/WHO etc'
+      'As well as','And','Then / Next','Also / Too','Moreover / Furthermore','In fact / As a matter of fact','Actually','Anyway','Besides','By the way'
     ];
 
     const shuffledWords = [...englishWordsList].sort(() => Math.random() - 0.5);
@@ -43,9 +43,9 @@ function RandomWord() {
         </Button>
       </div>
       <div className="words-container">
-        <div className="word-row ">
+        <div className="word-row">
           {englishWords.slice(0, 5).map((word, index) => (
-            <div key={index} className={`word buenas${index }`}>
+            <div key={index} className="word">
               <h2>{index + 1}</h2>
               <p>English: {word}</p>
               <p>Español: {spanishWords[index]}</p>
@@ -54,7 +54,7 @@ function RandomWord() {
         </div>
         <div className="word-row">
           {englishWords.slice(5).map((word, index) => (
-            <div key={index} className={`word buenas${index +5}`} >
+            <div key={index} className="word">
               <h2>{index + 6}</h2>
               <p>English: {word}</p>
               <p>Español: {spanishWords[index + 5]}</p>

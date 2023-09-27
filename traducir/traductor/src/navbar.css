@@ -1,0 +1,184 @@
+
+.bg-myRed{
+    background-color:crimson;
+}
+/* Alinea el botón de hamburguesa a la derecha */
+.navbar-toggler {
+    margin-left: auto;
+    border: 0 !important;
+  }
+  
+  /* Establece un margen derecho para separar el botón del borde derecho */
+  .navbar-toggler-icon {
+    margin-right: 15px; /* Ajusta el valor según sea necesario */
+  }
+Nav.link{
+    color: black;
+}
+.navbar .dropdown-item {
+    color: blue; /* Cambia el color del texto */
+    background-color: yellow; /* Cambia el color de fondo */
+  }
+  
+  /* Estilos para los elementos NavDropdown.Item al pasar el ratón */
+  .navbar .dropdown-item:hover {
+    color: red; /* Cambia el color del texto al pasar el ratón */
+    background-color: orange; /* Cambia el color de fondo al pasar el ratón */
+  }
+
+.navbar{
+  width: 100%;
+  padding-top: 0 !important;
+  
+}
+
+.navbar-brand{
+  margin-left: 6px;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column; /* Apila los elementos en columna */
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.button-container {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 40px;
+}
+
+.words-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; /* Centrar verticalmente las filas de palabras */
+}
+
+.word-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.word {
+  flex-basis: calc(50% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.content{
+  font-size: 20px;
+}
+/* Define la animación backOutUp */
+@keyframes backInUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+/* Define la animación backOutDown */
+@keyframes backInDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+/* Aplica la animación backOutUp a .buenas7 */
+.word.buenas0 {
+  opacity: 0; /* Inicialmente, el elemento está oculto */
+  animation-name: backInDown;
+  animation-duration: 1s; /* Duración de la animación en segundos */
+  animation-timing-function: ease-out; /* Función de temporización de la animación */
+  animation-fill-mode: forwards; /* Mantiene el estado final de la animación */
+  animation-delay: 0.1s;
+}
+.word.buenas1 {
+  opacity: 0; /* Inicialmente, el elemento está oculto */
+  animation-name: backInDown;
+  animation-duration: 1s; /* Duración de la animación en segundos */
+  animation-timing-function: ease-out; /* Función de temporización de la animación */
+  animation-fill-mode: forwards; /* Mantiene el estado final de la animación */
+  animation-delay: 0.3s;
+}
+.word.buenas2 {
+  opacity: 0; /* Inicialmente, el elemento está oculto */
+  animation-name: backInDown;
+  animation-duration: 1s; /* Duración de la animación en segundos */
+  animation-timing-function: ease-out; /* Función de temporización de la animación */
+  animation-fill-mode: forwards; /* Mantiene el estado final de la animación */
+  animation-delay: 0.5s;
+}
+.word.buenas3 {
+  opacity: 0; /* Inicialmente, el elemento está oculto */
+  animation-name: backInDown;
+  animation-duration: 1s; /* Duración de la animación en segundos */
+  animation-timing-function: ease-out; /* Función de temporización de la animación */
+  animation-fill-mode: forwards; /* Mantiene el estado final de la animación */
+  animation-delay: 0.7s;
+}
+.word.buenas4 {
+  opacity: 0; /* Inicialmente, el elemento está oculto */
+  animation-name: backInDown;
+  animation-duration: 1s; /* Duración de la animación en segundos */
+  animation-timing-function: ease-out; /* Función de temporización de la animación */
+  animation-fill-mode: forwards; /* Mantiene el estado final de la animación */
+  animation-delay: 0.9s;
+}
+
+/* Aplica la animación backOutDown a .buenas8 */
+.word.buenas5{
+  opacity: 0; /* Inicialmente, el elemento está oculto */
+  animation-name: backInUp;
+  animation-duration: 1s; /* Duración de la animación en segundos */
+  animation-timing-function: ease-out; /* Función de temporización de la animación */
+  animation-fill-mode: forwards; /* Mantiene el estado final de la animación */
+  animation-delay: 0.1s;
+}
+.word.buenas6{
+  opacity: 0; /* Inicialmente, el elemento está oculto */
+  animation-name: backInUp;
+  animation-duration: 1s; /* Duración de la animación en segundos */
+  animation-timing-function: ease-out; /* Función de temporización de la animación */
+  animation-fill-mode: forwards; /* Mantiene el estado final de la animación */
+  animation-delay: 0.3s;
+}
+.word.buenas7 {
+  opacity: 0; /* Inicialmente, el elemento está oculto */
+  animation-name: backInUp;
+  animation-duration: 1s; /* Duración de la animación en segundos */
+  animation-timing-function: ease-out; /* Función de temporización de la animación */
+  animation-fill-mode: forwards; /* Mantiene el estado final de la animación */
+  animation-delay: 0.5s;
+}
+.word.buenas8  {
+  opacity: 0; /* Inicialmente, el elemento está oculto */
+  animation-name: backInUp;
+  animation-duration: 1s; /* Duración de la animación en segundos */
+  animation-timing-function: ease-out; /* Función de temporización de la animación */
+  animation-fill-mode: forwards; /* Mantiene el estado final de la animación */
+  animation-delay: 0.7s;
+}
+.word.buenas9 {
+  opacity: 0; /* Inicialmente, el elemento está oculto */
+  animation-name: backInUp;
+  animation-duration: 1s; /* Duración de la animación en segundos */
+  animation-timing-function: ease-out; /* Función de temporización de la animación */
+  animation-fill-mode: forwards; /* Mantiene el estado final de la animación */
+  animation-delay: 0.9s;
+}
+
