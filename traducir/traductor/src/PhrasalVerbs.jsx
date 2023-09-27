@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles.css';
+
 
 function RandomWord() {
   const { t } = useTranslation();
@@ -43,12 +43,13 @@ function RandomWord() {
         </Button>
       </div>
       <div className="words-container">
-        <div className="word-row ">
+        <div className="word-row d-flex">
           {englishWords.slice(0, 5).map((word, index) => (
             <div key={index} className={`word buenas${index }`}>
               <h2>{index + 1}</h2>
-              <p>English: {word}</p>
-              <p>Español: {spanishWords[index]}</p>
+              <p>English: <b>{word}</b></p>
+              <p>Español: <b>{spanishWords[index]}</b></p>
+              <input type="text" />
             </div>
           ))}
         </div>
@@ -56,8 +57,9 @@ function RandomWord() {
           {englishWords.slice(5).map((word, index) => (
             <div key={index} className={`word buenas${index +5}`} >
               <h2>{index + 6}</h2>
-              <p>English: {word}</p>
-              <p>Español: {spanishWords[index + 5]}</p>
+              <p>English: <b>{word}</b></p>
+              <p>Español: <b>{spanishWords[index + 5]}</b></p>
+              <input type="text" />
             </div>
           ))}
         </div>

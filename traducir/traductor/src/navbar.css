@@ -1,6 +1,6 @@
 
 .bg-myRed{
-    background-color:crimson;
+    background-color:black;
 }
 /* Alinea el botón de hamburguesa a la derecha */
 .navbar-toggler {
@@ -13,22 +13,36 @@
     margin-right: 15px; /* Ajusta el valor según sea necesario */
   }
 Nav.link{
-    color: black;
+    color: white;
+    
 }
-.navbar .dropdown-item {
-    color: blue; /* Cambia el color del texto */
-    background-color: yellow; /* Cambia el color de fondo */
+.navbar .dropdown-menu.show {
+  background-color: black;
+
   }
   
+  .navbar .dropdown-item{
+    color: white;
+    
+  }
+  .navbar .dropdown-item.active{
+    color: white;
+    background-color: black ;
+  }
   /* Estilos para los elementos NavDropdown.Item al pasar el ratón */
   .navbar .dropdown-item:hover {
-    color: red; /* Cambia el color del texto al pasar el ratón */
-    background-color: orange; /* Cambia el color de fondo al pasar el ratón */
+    background-color: white
+
+  }
+  .navbar .dropdown-item.active:hover {
+    color: black;
+     
   }
 
 .navbar{
   width: 100%;
   padding-top: 0 !important;
+  padding-bottom: 0 !important;
   
 }
 
@@ -41,7 +55,7 @@ Nav.link{
   flex-direction: column; /* Apila los elementos en columna */
   justify-content: center;
   align-items: center;
-  min-height: 70vh;
+  min-height: 1vh;
 }
 
 .button-container {
@@ -49,7 +63,9 @@ Nav.link{
   margin-bottom: 20px;
   padding: 40px;
 }
-
+.e{
+  font-weight:bolder;
+}
 .words-container {
   display: flex;
   flex-wrap: wrap;
@@ -64,17 +80,22 @@ Nav.link{
   margin-bottom: 20px;
   margin-left: 20px;
 }
+button{
+  font-weight: bolder !important;
+}
 
 .word {
   flex-basis: calc(50% - 20px);
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   margin-right: 20px;
   text-align: center;
 }
 
 .content{
+  position: relative;
   font-size: 20px;
+  overflow: hidden;
 }
 /* Define la animación backOutUp */
 @keyframes backInUp {
